@@ -286,8 +286,8 @@ hr {
   z-index: 4;
   /* slide over group 2 and 4 */ }
   #logistics .base {
-    background: url(../img/lookingback.jpg);
-    background-size: cover; }
+    background: url(../img/rcmback.jpg);
+    background-size: auto; }
 
 #accommodations {
   z-index: 2;
