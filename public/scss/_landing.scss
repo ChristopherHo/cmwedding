@@ -4,16 +4,29 @@
   z-index: 5; /* slide over group 2 */
 
   .base {
-    background: url(../img/homeback.jpg);
+    background: url(../img/lookingback.jpg);
     background-size: cover;
+    background-position: 0% 40%;
+  }
+
+  .line {
+    height: 14em;
+    width: 0.25em;
+    border-radius: 3px;
+    background: url(../img/copperlines.png);
+    background-size: cover;
+    position: absolute;
+    left: 6%;
+    top: 60%;
   }
 
   .copy{
     text-transform: uppercase;
     text-align: left;
     font-size: 4em;
-    color: white;
-    left: 20%;
-    top: 50%;
+    line-height: 1.1em;
+    color: #545454;
+    left: 18%;
+    top: 75%;
   }
 }
