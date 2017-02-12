@@ -3,8 +3,9 @@
 #registry {
   z-index: 2; /* slide under group 5 and 7 */
 
-  .back {
-    background: url(../img/travelback.jpg);
+  .base {
+    background: url(../img/wildback.jpg);
     background-size: cover;
+    background-position: bottom;
   }
 }

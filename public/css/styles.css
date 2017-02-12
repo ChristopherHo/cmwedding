@@ -278,7 +278,7 @@ hr {
   z-index: 3;
   /* slide under groups 1 and 3 */ }
   #story .back {
-    background: url(../img/storyback.jpg);
+    background: url(../img/marble2back.png);
     background-size: cover;
     background-position: center; }
 
@@ -286,16 +286,15 @@ hr {
   z-index: 4;
   /* slide over group 2 and 4 */ }
   #logistics .base {
-    background: url(../img/rcmback.jpg);
-    background-size: auto; }
+    background: url(../img/lookingback.jpg);
+    background-size: cover; }
 
 #accommodations {
   z-index: 2;
   /* slide under group 3 and 5 */ }
   #accommodations .back {
-    background: url(../img/wildback.jpg);
-    background-size: cover;
-    background-position: bottom; }
+    background: url(../img/storyback.jpg);
+    background-size: cover; }
 
 #party {
   z-index: 3;
@@ -308,9 +307,10 @@ hr {
 #registry {
   z-index: 2;
   /* slide under group 5 and 7 */ }
-  #registry .back {
-    background: url(../img/travelback.jpg);
-    background-size: cover; }
+  #registry .base {
+    background: url(../img/wildback.jpg);
+    background-size: cover;
+    background-position: bottom; }
 
 #rsvp {
   z-index: 3;
