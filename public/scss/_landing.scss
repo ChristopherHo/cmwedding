@@ -1,0 +1,19 @@
+// Landing //
+
+#landing {
+  z-index: 5; /* slide over group 2 */
+
+  .base {
+    background: url(../img/homeback.jpg);
+    background-size: cover;
+  }
+
+  .copy{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 4em;
+    color: white;
+    left: 20%;
+    top: 50%;
+  }
+}

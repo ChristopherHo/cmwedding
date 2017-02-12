@@ -1,0 +1,16 @@
+// RSVP //
+
+#rsvp {
+  z-index: 3; /* slide over group 7 */
+
+  .base {
+    background: white;
+  }
+
+  .form{
+    width: 100%;
+    height: 100%;
+    height: cover;
+    overflow: auto;
+  }
+}
