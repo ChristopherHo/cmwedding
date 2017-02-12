@@ -1,0 +1,11 @@
+// Accommodations //
+
+#accommodations {
+  z-index: 2; /* slide under group 3 and 5 */
+
+  .back {
+    background: url(../img/wildback.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+}

@@ -1,0 +1,17 @@
+// Top Nav //
+
+.topnav{
+  background-color: transparent;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 0.9em;
+  z-index: 100;
+  position: absolute;
+
+  li{
+    display: inline-block;
+    padding: 1em;
+  }
+}

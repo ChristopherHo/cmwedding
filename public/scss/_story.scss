@@ -1,0 +1,11 @@
+// Story //
+
+#story {
+  z-index: 3; /* slide under groups 1 and 3 */
+
+  .back {
+    background: url(../img/storyback.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
