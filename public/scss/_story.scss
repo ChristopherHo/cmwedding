@@ -4,8 +4,52 @@
   z-index: 3; /* slide under groups 1 and 3 */
 
   .back {
-    background: url(../img/marble2back.png);
+    background: url(../img/marble3back.png);
     background-size: cover;
     background-position: center;
+  }
+
+  .wire-one{
+    height: 15em;
+    width: 0.25em;
+    left: 30%;
+    top: 30%;
+  }
+
+  .wire-two{
+    height: 0.25em;
+    width: 8em;
+    left: 40%;
+    top: 50%;
+  }
+
+  .wire-three{
+    height: 0.25em;
+    width: 16em;
+    left: 45%;
+    top: 20%;
+  }
+
+  .wire-four{
+    height: 8em;
+    width: 0.25em;
+    left: 65%;
+    top: 55%;
+  }
+
+  .copy{
+
+    width: 25em;
+
+    h2{
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: lighter;
+      text-align: left;
+    }
+
+    p{
+      text-align: left;
+    }
   }
 }

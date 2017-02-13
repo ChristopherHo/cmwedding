@@ -247,6 +247,14 @@ hr {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+.wire {
+  height: 10em;
+  width: 0.25em;
+  border-radius: 3px;
+  background: url(../img/copperlines.png);
+  background-size: cover;
+  position: absolute; }
+
 .topnav {
   background-color: transparent;
   display: inline-block;
@@ -267,15 +275,11 @@ hr {
     background: url(../img/lookingback.jpg);
     background-size: cover;
     background-position: 0% 40%; }
-  #landing .line {
-    height: 14em;
-    width: 0.25em;
-    border-radius: 3px;
-    background: url(../img/copperlines.png);
-    background-size: cover;
-    position: absolute;
-    left: 6%;
-    top: 60%; }
+  #landing .wire {
+    height: 3.5em;
+    width: 5px;
+    left: 9%;
+    top: 20%; }
   #landing .copy {
     text-transform: uppercase;
     text-align: left;
@@ -283,37 +287,69 @@ hr {
     line-height: 1.1em;
     color: #545454;
     left: 18%;
-    top: 75%; }
+    top: 75%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1.5em 1em 0.5em 1em;
+    border-radius: 3px; }
 
 #story {
   z-index: 3;
   /* slide under groups 1 and 3 */ }
   #story .back {
-    background: url(../img/marble2back.png);
+    background: url(../img/marble3back.png);
     background-size: cover;
     background-position: center; }
+  #story .wire-one {
+    height: 15em;
+    width: 0.25em;
+    left: 30%;
+    top: 30%; }
+  #story .wire-two {
+    height: 0.25em;
+    width: 8em;
+    left: 40%;
+    top: 50%; }
+  #story .wire-three {
+    height: 0.25em;
+    width: 16em;
+    left: 45%;
+    top: 20%; }
+  #story .wire-four {
+    height: 8em;
+    width: 0.25em;
+    left: 65%;
+    top: 55%; }
+  #story .copy {
+    width: 25em; }
+    #story .copy h2 {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: lighter;
+      text-align: left; }
+    #story .copy p {
+      text-align: left; }
 
 #logistics {
   z-index: 4;
   /* slide over group 2 and 4 */ }
   #logistics .base {
-    background: url(../img/homeback.jpg);
+    background: url(../img/rcmback.jpg);
     background-size: cover; }
 
 #accommodations {
   z-index: 2;
   /* slide under group 3 and 5 */ }
   #accommodations .back {
-    background: url(../img/storyback.jpg);
+    background: url(../img/homeback.jpg);
     background-size: cover; }
 
 #registry {
   z-index: 2;
   /* slide under group 5 and 7 */ }
   #registry .base {
-    background: url(../img/wildback.jpg);
-    background-size: cover;
-    background-position: bottom; }
+    background: url(../img/reflectback.jpg);
+    background-size: contain;
+    background-position: center; }
 
 #rsvp {
   z-index: 3;
