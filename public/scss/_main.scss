@@ -65,7 +65,7 @@
   z-index: 2;
 }
 
-// Placeholder Copy
+// Copy Holder //
 
 .copy {
   text-align: center;
@@ -74,4 +74,15 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+// Wire Styling //
+
+.wire {
+  height: 10em;
+  width: 0.25em;
+  border-radius: 3px;
+  background: url(../img/copperlines.png);
+  background-size: cover;
+  position: absolute;
 }

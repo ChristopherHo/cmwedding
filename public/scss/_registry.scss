@@ -4,8 +4,8 @@
   z-index: 2; /* slide under group 5 and 7 */
 
   .base {
-    background: url(../img/wildback.jpg);
-    background-size: cover;
-    background-position: bottom;
+    background: url(../img/reflectback.jpg);
+    background-size: contain;
+    background-position: center;
   }
 }
