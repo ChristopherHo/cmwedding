@@ -10,36 +10,37 @@
   }
 
   .wire-one{
-    height: 15em;
+    height: 10em;
     width: 0.25em;
-    left: 30%;
-    top: 30%;
+    left: 0%;
+    top: 0%;
   }
 
   .wire-two{
     height: 0.25em;
     width: 8em;
-    left: 40%;
-    top: 50%;
+    left: 0%;
+    top: 0%;
   }
 
   .wire-three{
     height: 0.25em;
     width: 16em;
-    left: 45%;
-    top: 20%;
+    right: 0%;
+    bottom: 0%;
   }
 
   .wire-four{
     height: 8em;
     width: 0.25em;
-    left: 65%;
-    top: 55%;
+    right: 0%;
+    bottom: 0%;
   }
 
   .copy{
 
-    width: 25em;
+    width: 35em;
+    padding: 2em;
 
     h2{
       text-transform: uppercase;

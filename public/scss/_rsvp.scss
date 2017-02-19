@@ -13,6 +13,11 @@
     height: 100%;
     height: cover;
     overflow: hidden;
+    font-family: avenir;
+  }
+
+  iframe{
+    font-family: avenir;
   }
 
   .footer{
@@ -32,5 +37,9 @@
         font-size: 16px;
       }
     }
+  }
+
+  div.freebirdFormviewerViewCenteredContent{
+    font-family: avenir;
   }
 }
