@@ -7,13 +7,13 @@ html {
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #1565c0;
+  background-color: #b87333;
   border: 0;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: quicksand;
+  font-family: Quicksand;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -26,13 +26,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #11519a;
+    background-color: #935c29;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #1565c0; }
+      background-color: #b87333; }
 
 fieldset {
   background-color: transparent;
@@ -54,7 +54,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: quicksand;
+  font-family: Quicksand;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
@@ -71,8 +71,8 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover {
     border-color: #b1b1b1; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus {
-    border-color: #1565c0;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+    border-color: #b87333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(164, 103, 45, 0.7);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled {
     background-color: #f2f2f2;
@@ -160,7 +160,7 @@ th {
 
 body {
   color: #333;
-  font-family: quicksand;
+  font-family: Quicksand;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -170,7 +170,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: quicksand;
+  font-family: Quicksand;
   font-size: 1.333em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -183,7 +183,7 @@ a {
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #104c90; }
+    color: #b87333; }
 
 hr {
   border-bottom: 1px solid #ddd;
@@ -246,10 +246,12 @@ hr {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+  .copy h2 {
+    text-transform: uppercase; }
 
 .wire {
   height: 10em;
-  width: 0.25em;
+  width: 0.2em;
   border-radius: 3px;
   background: url(../img/copperlines.png);
   background-size: cover;
@@ -277,9 +279,27 @@ hr {
     background-position: 0% 40%; }
   #landing .wire {
     height: 3.5em;
-    width: 5px;
+    width: 0.05em;
     left: 9%;
     top: 20%; }
+  #landing .circle {
+    border-radius: 50px;
+    border: solid 1px #905a28;
+    position: absolute;
+    bottom: 3%;
+    width: 3em;
+    height: 3em;
+    left: 47%; }
+    #landing .circle:hover {
+      background-color: white;
+      opacity: 0.4; }
+    #landing .circle i {
+      color: #905a28;
+      vertical-align: center;
+      font-size: 38px;
+      position: relative;
+      top: 5px;
+      left: 5px; }
   #landing .copy {
     text-transform: uppercase;
     text-align: left;
@@ -300,35 +320,26 @@ hr {
     background-size: cover;
     background-position: center; }
   #story .wire-one {
-    height: 10em;
-    width: 0.25em;
-    left: 0%;
-    top: 0%; }
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    top: 10%; }
   #story .wire-two {
-    height: 0.25em;
-    width: 8em;
-    left: 0%;
-    top: 0%; }
-  #story .wire-three {
-    height: 0.25em;
-    width: 16em;
-    right: 0%;
-    bottom: 0%; }
-  #story .wire-four {
-    height: 8em;
-    width: 0.25em;
-    right: 0%;
-    bottom: 0%; }
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    bottom: 10%; }
   #story .copy {
-    width: 35em;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 350px;
     padding: 2em; }
     #story .copy h2 {
       text-transform: uppercase;
       font-size: 24px;
       font-weight: lighter;
-      text-align: left; }
+      text-align: center; }
     #story .copy p {
-      text-align: left; }
+      text-align: center; }
 
 #logistics {
   z-index: 4;
@@ -341,12 +352,12 @@ hr {
     padding: 3em 2em;
     border-radius: 3px; }
   #logistics .wire-one {
-    height: 0.25em;
+    height: 3px;
     width: 18em;
     left: 10%;
     top: 10%; }
   #logistics .wire-two {
-    height: 0.25em;
+    height: 3px;
     width: 18em;
     left: 10%;
     bottom: 10%; }
@@ -359,12 +370,42 @@ hr {
     background-size: cover;
     background-position: left; }
   #accommodations .copy {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3em 2em;
     border-radius: 3px;
-    left: 20%;
-    top: 30%;
-    width: 15em; }
+    width: 350px;
+    text-align: left; }
+    #accommodations .copy h2 {
+      text-align: center; }
+    #accommodations .copy p {
+      padding-left: 0.5em; }
+    #accommodations .copy ul {
+      font-size: 0.9em;
+      color: grey;
+      margin: 1em 0em;
+      padding-left: 0.5em; }
+    #accommodations .copy button {
+      vertical-align: middle;
+      background-color: transparent;
+      border-radius: 3px;
+      border: solid 1px #905a28;
+      color: #905a28;
+      margin: 0.5em 0em 0em 1em;
+      text-align: center;
+      font-size: 0.9em;
+      width: 18em; }
+      #accommodations .copy button:hover {
+        background-color: rgba(144, 90, 40, 0.2); }
+    #accommodations .copy .wire-one {
+      height: 3px;
+      width: 18em;
+      left: 10%;
+      top: 7%; }
+    #accommodations .copy .wire-two {
+      height: 3px;
+      width: 18em;
+      left: 10%;
+      bottom: 7%; }
 
 #registry {
   z-index: 2;
@@ -373,11 +414,26 @@ hr {
     background: url(../img/whiteback.jpg);
     background-size: cover;
     background-position: center; }
+  #registry .copy {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3em 2em;
+    border-radius: 3px;
+    width: 350px; }
+  #registry .wire-one {
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    top: 10%; }
+  #registry .wire-two {
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    bottom: 10%; }
 
 #rsvp {
   z-index: 3;
   /* slide over group 7 */
-  height: 240vh; }
+  height: 225vh; }
   #rsvp .base {
     background: white; }
   #rsvp .form {
@@ -385,8 +441,6 @@ hr {
     height: 100%;
     height: cover;
     overflow: hidden;
-    font-family: avenir; }
-  #rsvp iframe {
     font-family: avenir; }
   #rsvp .footer {
     width: 100%;
@@ -401,7 +455,5 @@ hr {
       #rsvp .footer p i {
         color: #a30031;
         font-size: 16px; }
-  #rsvp div.freebirdFormviewerViewCenteredContent {
-    font-family: avenir; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -74,13 +74,17 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  h2 {
+    text-transform: uppercase;
+  }
 }
 
 // Wire Styling //
 
 .wire {
   height: 10em;
-  width: 0.25em;
+  width: 0.2em;
   border-radius: 3px;
   background: url(../img/copperlines.png);
   background-size: cover;

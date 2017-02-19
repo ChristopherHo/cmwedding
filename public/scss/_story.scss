@@ -10,47 +10,61 @@
   }
 
   .wire-one{
-    height: 10em;
-    width: 0.25em;
-    left: 0%;
-    top: 0%;
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    top: 10%;
   }
 
   .wire-two{
-    height: 0.25em;
-    width: 8em;
-    left: 0%;
-    top: 0%;
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    bottom: 10%;
   }
 
-  .wire-three{
-    height: 0.25em;
-    width: 16em;
-    right: 0%;
-    bottom: 0%;
-  }
+  // .wire-one{
+  //   height: 10em;
+  //   width: 3px;
+  //   left: 0%;
+  //   top: 0%;
+  // }
+  //
+  // .wire-two{
+  //   height: 3px;
+  //   width: 8em;
+  //   left: 0%;
+  //   top: 0%;
+  // }
 
-  .wire-four{
-    height: 8em;
-    width: 0.25em;
-    right: 0%;
-    bottom: 0%;
-  }
+  // .wire-three{
+  //   height: 3px;
+  //   width: 16em;
+  //   right: 0%;
+  //   bottom: 0%;
+  // }
+  //
+  // .wire-four{
+  //   height: 8em;
+  //   width: 3px;
+  //   right: 0%;
+  //   bottom: 0%;
+  // }
 
   .copy{
-
-    width: 35em;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 350px;
     padding: 2em;
 
     h2{
       text-transform: uppercase;
       font-size: 24px;
       font-weight: lighter;
-      text-align: left;
+      text-align: center;
     }
 
     p{
-      text-align: left;
+      text-align: center;
     }
   }
 }
