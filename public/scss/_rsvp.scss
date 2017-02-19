@@ -2,7 +2,7 @@
 
 #rsvp {
   z-index: 3; /* slide over group 7 */
-  height: 240vh;
+  height: 225vh;
 
   .base {
     background: white;
@@ -13,10 +13,6 @@
     height: 100%;
     height: cover;
     overflow: hidden;
-    font-family: avenir;
-  }
-
-  iframe{
     font-family: avenir;
   }
 
@@ -37,9 +33,5 @@
         font-size: 16px;
       }
     }
-  }
-
-  div.freebirdFormviewerViewCenteredContent{
-    font-family: avenir;
   }
 }

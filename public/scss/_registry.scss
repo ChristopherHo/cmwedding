@@ -8,4 +8,25 @@
     background-size: cover;
     background-position: center;
   }
+
+  .copy{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3em 2em;
+    border-radius: 3px;
+    width: 350px;
+  }
+
+  .wire-one{
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    top: 10%;
+  }
+
+  .wire-two{
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    bottom: 10%;
+  }
 }

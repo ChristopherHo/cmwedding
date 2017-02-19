@@ -10,13 +10,71 @@
   }
 
   .copy{
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3em 2em;
     border-radius: 3px;
-    left: 20%;
-    top: 30%;
-    width: 15em;
+    width: 350px;
+    text-align: left;
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      padding-left: 0.5em;
+    }
+
+    ul{
+      font-size: 0.9em;
+      color: grey;
+      margin: 1em 0em;
+      padding-left: 0.5em;
+    }
+
+    button{
+      vertical-align: middle;
+      background-color: transparent;
+      border-radius: 3px;
+      border: solid 1px #905a28;
+      color: #905a28;
+      margin: 0.5em 0em 0em 1em;
+      text-align: center;
+      font-size: 0.9em;
+      width: 18em;
+
+      &:hover{
+        background-color: rgba(144, 90, 40,0.2);
+      }
+    }
+
+    .wire-one{
+      height: 3px;
+      width: 18em;
+      left: 10%;
+      top: 7%;
+    }
+
+    .wire-two{
+      height: 3px;
+      width: 18em;
+      left: 10%;
+      bottom: 7%;
+    }
   }
 
 
+
+  // .wire-one{
+  //   height: 20em;
+  //   width: 3px;
+  //   left: 4%;
+  //   top: 5%;
+  // }
+  //
+  // .wire-two{
+  //   height: 3px;
+  //   width: 12em;
+  //   left: 4%;
+  //   top: 5%;
+  // }
 }

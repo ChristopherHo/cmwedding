@@ -11,9 +11,33 @@
 
   .wire {
     height: 3.5em;
-    width: 5px;
+    width: 0.05em;
     left: 9%;
     top: 20%;
+  }
+
+  .circle{
+    border-radius: 50px;
+    border: solid 1px #905a28;
+    position: absolute;
+    bottom: 3%;
+    width: 3em;
+    height: 3em;
+    left: 47%;
+
+    &:hover{
+      background-color: white;
+      opacity: 0.4;
+    }
+
+    i{
+      color: #905a28;
+      vertical-align: center;
+      font-size: 38px;
+      position: relative;
+      top: 5px;
+      left: 5px;
+    }
   }
 
   .copy{
