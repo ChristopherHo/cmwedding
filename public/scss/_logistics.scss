@@ -2,7 +2,27 @@
   z-index: 4; /* slide over group 2 and 4 */
 
   .base {
-    background: url(../img/rcmback.jpg);
+    background: url(../img/rcm5back.jpg);
     background-size: cover;
+  }
+
+  .copy{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3em 2em;
+    border-radius: 3px;
+  }
+
+  .wire-one{
+    height: 0.25em;
+    width: 18em;
+    left: 10%;
+    top: 10%;
+  }
+
+  .wire-two{
+    height: 0.25em;
+    width: 18em;
+    left: 10%;
+    bottom: 10%;
   }
 }

@@ -13,7 +13,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: avenir;
+  font-family: quicksand;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -54,7 +54,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: avenir;
+  font-family: quicksand;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
@@ -160,7 +160,7 @@ th {
 
 body {
   color: #333;
-  font-family: avenir;
+  font-family: quicksand;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -170,7 +170,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: avenir;
+  font-family: quicksand;
   font-size: 1.333em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -300,27 +300,28 @@ hr {
     background-size: cover;
     background-position: center; }
   #story .wire-one {
-    height: 15em;
+    height: 10em;
     width: 0.25em;
-    left: 30%;
-    top: 30%; }
+    left: 0%;
+    top: 0%; }
   #story .wire-two {
     height: 0.25em;
     width: 8em;
-    left: 40%;
-    top: 50%; }
+    left: 0%;
+    top: 0%; }
   #story .wire-three {
     height: 0.25em;
     width: 16em;
-    left: 45%;
-    top: 20%; }
+    right: 0%;
+    bottom: 0%; }
   #story .wire-four {
     height: 8em;
     width: 0.25em;
-    left: 65%;
-    top: 55%; }
+    right: 0%;
+    bottom: 0%; }
   #story .copy {
-    width: 25em; }
+    width: 35em;
+    padding: 2em; }
     #story .copy h2 {
       text-transform: uppercase;
       font-size: 24px;
@@ -333,22 +334,44 @@ hr {
   z-index: 4;
   /* slide over group 2 and 4 */ }
   #logistics .base {
-    background: url(../img/rcmback.jpg);
+    background: url(../img/rcm5back.jpg);
     background-size: cover; }
+  #logistics .copy {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3em 2em;
+    border-radius: 3px; }
+  #logistics .wire-one {
+    height: 0.25em;
+    width: 18em;
+    left: 10%;
+    top: 10%; }
+  #logistics .wire-two {
+    height: 0.25em;
+    width: 18em;
+    left: 10%;
+    bottom: 10%; }
 
 #accommodations {
   z-index: 2;
   /* slide under group 3 and 5 */ }
   #accommodations .back {
     background: url(../img/homeback.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: left; }
+  #accommodations .copy {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2em;
+    border-radius: 3px;
+    left: 20%;
+    top: 30%;
+    width: 15em; }
 
 #registry {
   z-index: 2;
   /* slide under group 5 and 7 */ }
   #registry .base {
-    background: url(../img/reflectback.jpg);
-    background-size: contain;
+    background: url(../img/whiteback.jpg);
+    background-size: cover;
     background-position: center; }
 
 #rsvp {
@@ -361,7 +384,10 @@ hr {
     width: 100%;
     height: 100%;
     height: cover;
-    overflow: hidden; }
+    overflow: hidden;
+    font-family: avenir; }
+  #rsvp iframe {
+    font-family: avenir; }
   #rsvp .footer {
     width: 100%;
     background-color: #ECECEC;
@@ -375,5 +401,7 @@ hr {
       #rsvp .footer p i {
         color: #a30031;
         font-size: 16px; }
+  #rsvp div.freebirdFormviewerViewCenteredContent {
+    font-family: avenir; }
 
 /*# sourceMappingURL=styles.css.map */
