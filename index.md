@@ -5,4 +5,3 @@
 layout: main
 main-page: home
 ---
-{% include_relative index.html %}
