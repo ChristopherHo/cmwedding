@@ -3,5 +3,3 @@ _posts
 .jekyll-metadata
 .DS_Store
 s3_website.yml
-Gemfile
-Gemfile.lock
