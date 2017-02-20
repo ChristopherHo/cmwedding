@@ -1,27 +1,32 @@
 // Story //
 
 #story {
-  z-index: 3; /* slide under groups 1 and 3 */
+  z-index: 3;
 
   .back {
-    background: url(../img/marble3back.png);
+    background: url(../img/marble3back.png) center;
     background-size: cover;
-    background-position: center;
   }
 
-  .wire-one{
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    top: 10%;
-  }
+  .base{
+    .copy{
 
-  .wire-two{
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    bottom: 10%;
+      .wire-one{
+        height: 3px;
+        width: 18em;
+        left: 10%;
+        top: 10%;
+      }
+
+      .wire-two{
+        height: 3px;
+        width: 18em;
+        left: 10%;
+        bottom: 10%;
+      }
+    }
   }
+}
 
   // .wire-one{
   //   height: 10em;
@@ -50,21 +55,3 @@
   //   right: 0%;
   //   bottom: 0%;
   // }
-
-  .copy{
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 350px;
-    padding: 2em;
-
-    h2{
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: lighter;
-      text-align: center;
-    }
-
-    p{
-      text-align: center;
-    }
-  }
-}
