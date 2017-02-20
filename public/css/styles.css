@@ -176,7 +176,7 @@ h6 {
   margin: 0 0 0.75em; }
 
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 1em; }
 
 a {
   color: inherit;
@@ -208,7 +208,9 @@ hr {
   height: 500px;
   height: 100vh;
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out; }
 
 .layer {
   position: absolute;
@@ -245,9 +247,17 @@ hr {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3em 2em;
+  width: 350px; }
+  .copy p {
+    text-align: center; }
   .copy h2 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center; }
 
 .wire {
   height: 10em;
@@ -256,6 +266,10 @@ hr {
   background: url(../img/copperlines.png);
   background-size: cover;
   position: absolute; }
+
+a[id="r-scroll"]:target ~ #parallax #registry {
+  -webkit-transform: translateY(-1000px);
+  transform: translateY(-1000px); }
 
 .topnav {
   background-color: transparent;
@@ -277,11 +291,6 @@ hr {
     background: url(../img/lookingback.jpg);
     background-size: cover;
     background-position: 0% 40%; }
-  #landing .wire {
-    height: 3.5em;
-    width: 0.05em;
-    left: 9%;
-    top: 20%; }
   #landing .circle {
     border-radius: 50px;
     border: solid 1px #905a28;
@@ -300,46 +309,22 @@ hr {
       position: relative;
       top: 5px;
       left: 5px; }
-  #landing .copy {
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 4em;
-    line-height: 1.1em;
-    color: #545454;
-    left: 18%;
-    top: 75%;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 1.5em 1em 0.5em 1em;
-    border-radius: 3px; }
 
 #story {
-  z-index: 3;
-  /* slide under groups 1 and 3 */ }
+  z-index: 3; }
   #story .back {
-    background: url(../img/marble3back.png);
-    background-size: cover;
-    background-position: center; }
-  #story .wire-one {
+    background: url(../img/marble3back.png) center;
+    background-size: cover; }
+  #story .base .copy .wire-one {
     height: 3px;
     width: 18em;
     left: 10%;
     top: 10%; }
-  #story .wire-two {
+  #story .base .copy .wire-two {
     height: 3px;
     width: 18em;
     left: 10%;
     bottom: 10%; }
-  #story .copy {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 350px;
-    padding: 2em; }
-    #story .copy h2 {
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: lighter;
-      text-align: center; }
-    #story .copy p {
-      text-align: center; }
 
 #logistics {
   z-index: 4;
@@ -415,20 +400,17 @@ hr {
     background-size: cover;
     background-position: center; }
   #registry .copy {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 3em 2em;
-    border-radius: 3px;
-    width: 350px; }
-  #registry .wire-one {
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    top: 10%; }
-  #registry .wire-two {
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    bottom: 10%; }
+    width: 380px; }
+    #registry .copy .wire-one {
+      height: 3px;
+      width: 20em;
+      left: 10%;
+      top: 10%; }
+    #registry .copy .wire-two {
+      height: 3px;
+      width: 20em;
+      left: 10%;
+      bottom: 10%; }
 
 #rsvp {
   z-index: 3;
