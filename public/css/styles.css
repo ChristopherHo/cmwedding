@@ -294,28 +294,16 @@ hr {
       display: none; } }
 
 #landing {
-  z-index: 5;
-  /* slide over group 2 */ }
+  z-index: 5; }
   #landing .base {
     background: url(../img/landingback.jpg);
     background-size: cover;
     background-position: 0% 40%; }
-    #landing .base h2 {
-      display: none;
-      position: absolute;
-      top: 3%;
-      left: 15%;
-      font-size: 2.5em;
-      color: white;
-      text-transform: uppercase;
-      font-family: quicksand; }
     @media only screen and (max-width: 600px) {
       #landing .base {
         background: url(../img/landingmobile.jpg);
         background-size: contain;
-        background-repeat: no-repeat; }
-        #landing .base h2 {
-          display: block; } }
+        background-repeat: no-repeat; } }
   #landing .circle {
     border-radius: 50px;
     border: solid 1px #905a28;
@@ -336,7 +324,7 @@ hr {
       left: 5px; }
     @media only screen and (max-width: 600px) {
       #landing .circle {
-        bottom: 18%; } }
+        display: none; } }
 
 #story {
   z-index: 3; }
@@ -399,6 +387,9 @@ hr {
 #rsvp {
   z-index: 3;
   height: 210vh; }
+  @media only screen and (max-width: 600px) {
+    #rsvp {
+      height: 1450px; } }
   #rsvp .base {
     background: white; }
   #rsvp .form {

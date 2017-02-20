@@ -1,32 +1,17 @@
 // Landing //
 
 #landing {
-  z-index: 5; /* slide over group 2 */
+  z-index: 5;
 
   .base {
     background: url(../img/landingback.jpg);
     background-size: cover;
     background-position: 0% 40%;
 
-    h2{
-      display: none;
-      position: absolute;
-      top: 3%;
-      left: 15%;
-      font-size: 2.5em;
-      color: white;
-      text-transform: uppercase;
-      font-family: quicksand;
-    }
-
     @media only screen and (max-width: $medium-screen) {
       background: url(../img/landingmobile.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-
-      h2{
-        display: block;
-      }
     }
   }
 
@@ -54,7 +39,7 @@
     }
 
     @media only screen and (max-width: $medium-screen) {
-      bottom: 18%;
+      display: none;
     }
   }
 }
