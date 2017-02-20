@@ -1,8 +1,8 @@
 // RSVP //
 
 #rsvp {
-  z-index: 3; /* slide over group 7 */
-  height: 225vh;
+  z-index: 3;
+  height: 210vh;
 
   .base {
     background: white;
@@ -32,6 +32,11 @@
         color: #a30031;
         font-size: 16px;
       }
+    }
+
+    @media only screen and (max-width: $medium-screen) {
+      height: 9em;
+      margin-top: -14em;
     }
   }
 }

@@ -1,15 +1,15 @@
 #{$all-buttons} {
   appearance: none;
-  background-color: $action-color;
-  border: 0;
-  border-radius: $base-border-radius;
-  color: #fff;
+  background-color: transparent;
+  border: solid 1px #905a28;
+  border-radius: 3px;
+  color: #905a28;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: bolder;
   line-height: 1;
   padding: $small-spacing $base-spacing;
   text-align: center;
@@ -18,10 +18,11 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  width: 18em;
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
+    background-color: rgba(144, 90, 40,0.8);
     color: #fff;
   }
 

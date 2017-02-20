@@ -1,28 +1,14 @@
 #logistics {
-  z-index: 4; /* slide over group 2 and 4 */
-
+  z-index: 4;
+  
   .base {
-    background: url(../img/rcm5back.jpg);
+    background: url(../img/logisticsback.jpg);
     background-size: cover;
-  }
 
-  .copy{
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 3em 2em;
-    border-radius: 3px;
-  }
-
-  .wire-one{
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    top: 10%;
-  }
-
-  .wire-two{
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    bottom: 10%;
+    @media only screen and (max-width: $medium-screen) {
+      background: url(../img/logisticsmobile.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }
