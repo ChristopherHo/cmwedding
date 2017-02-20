@@ -5,4 +5,7 @@
 layout: main
 main-page: home
 ---
+<<<<<<< HEAD
 {% include_relative index.html %}
+=======
+>>>>>>> 6576c717d44c5eedc7a80d6ff1efdaf055813301
