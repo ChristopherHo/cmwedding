@@ -342,6 +342,9 @@ hr {
   #story .back {
     background: url(../img/storyback.png) center;
     background-size: cover; }
+  #story .base .copy p .tinder {
+    height: 10px;
+    width: 10px; }
   #story .base .copy .wire-one {
     height: 3px;
     width: 18em;
