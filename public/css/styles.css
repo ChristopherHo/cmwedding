@@ -7,16 +7,16 @@ html {
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #b87333;
-  border: 0;
+  background-color: transparent;
+  border: solid 1px #905a28;
   border-radius: 3px;
-  color: #fff;
+  color: #905a28;
   cursor: pointer;
   display: inline-block;
   font-family: Quicksand;
-  font-size: 1em;
+  font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: bolder;
   line-height: 1;
   padding: 0.75em 1.5em;
   text-align: center;
@@ -24,9 +24,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   transition: background-color 150ms ease;
   user-select: none;
   vertical-align: middle;
-  white-space: nowrap; }
+  white-space: nowrap;
+  width: 18em; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #935c29;
+    background-color: rgba(144, 90, 40, 0.8);
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
@@ -242,13 +243,14 @@ hr {
   z-index: 2; }
 
 .copy {
+  border-radius: 3px;
   text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 3em 2em;
   width: 350px; }
   .copy p {
@@ -258,18 +260,21 @@ hr {
     font-size: 24px;
     font-weight: lighter;
     text-align: center; }
-
-.wire {
-  height: 10em;
-  width: 0.2em;
-  border-radius: 3px;
-  background: url(../img/copperlines.png);
-  background-size: cover;
-  position: absolute; }
-
-a[id="r-scroll"]:target ~ #parallax #registry {
-  -webkit-transform: translateY(-1000px);
-  transform: translateY(-1000px); }
+  .copy .wire {
+    border-radius: 3px;
+    background: url(../img/copperwire.png);
+    background-size: cover;
+    position: absolute; }
+  .copy .wire-one {
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    top: 7%; }
+  .copy .wire-two {
+    height: 3px;
+    width: 18em;
+    left: 10%;
+    bottom: 7%; }
 
 .topnav {
   background-color: transparent;
@@ -283,14 +288,22 @@ a[id="r-scroll"]:target ~ #parallax #registry {
   .topnav li {
     display: inline-block;
     padding: 1em; }
+  @media only screen and (max-width: 600px) {
+    .topnav {
+      display: none; } }
 
 #landing {
   z-index: 5;
   /* slide over group 2 */ }
   #landing .base {
-    background: url(../img/lookingback.jpg);
+    background: url(../img/landingback.jpg);
     background-size: cover;
     background-position: 0% 40%; }
+    @media only screen and (max-width: 600px) {
+      #landing .base {
+        background: url(../img/landingmobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat; } }
   #landing .circle {
     border-radius: 50px;
     border: solid 1px #905a28;
@@ -309,11 +322,14 @@ a[id="r-scroll"]:target ~ #parallax #registry {
       position: relative;
       top: 5px;
       left: 5px; }
+    @media only screen and (max-width: 600px) {
+      #landing .circle {
+        bottom: 18%; } }
 
 #story {
   z-index: 3; }
   #story .back {
-    background: url(../img/marble3back.png) center;
+    background: url(../img/storyback.png) center;
     background-size: cover; }
   #story .base .copy .wire-one {
     height: 3px;
@@ -327,95 +343,50 @@ a[id="r-scroll"]:target ~ #parallax #registry {
     bottom: 10%; }
 
 #logistics {
-  z-index: 4;
-  /* slide over group 2 and 4 */ }
+  z-index: 4; }
   #logistics .base {
-    background: url(../img/rcm5back.jpg);
+    background: url(../img/logisticsback.jpg);
     background-size: cover; }
-  #logistics .copy {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 3em 2em;
-    border-radius: 3px; }
-  #logistics .wire-one {
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    top: 10%; }
-  #logistics .wire-two {
-    height: 3px;
-    width: 18em;
-    left: 10%;
-    bottom: 10%; }
+    @media only screen and (max-width: 600px) {
+      #logistics .base {
+        background: url(../img/logisticsmobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat; } }
 
 #accommodations {
-  z-index: 2;
-  /* slide under group 3 and 5 */ }
+  z-index: 2; }
   #accommodations .back {
-    background: url(../img/homeback.jpg);
+    background: url(../img/accommodationsback.jpg);
     background-size: cover;
     background-position: left; }
-  #accommodations .copy {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 3em 2em;
-    border-radius: 3px;
-    width: 350px;
-    text-align: left; }
-    #accommodations .copy h2 {
-      text-align: center; }
-    #accommodations .copy p {
-      padding-left: 0.5em; }
-    #accommodations .copy ul {
-      font-size: 0.9em;
-      color: grey;
-      margin: 1em 0em;
-      padding-left: 0.5em; }
-    #accommodations .copy button {
-      vertical-align: middle;
-      background-color: transparent;
-      border-radius: 3px;
-      border: solid 1px #905a28;
-      color: #905a28;
-      margin: 0.5em 0em 0em 1em;
-      text-align: center;
-      font-size: 0.9em;
-      width: 18em; }
-      #accommodations .copy button:hover {
-        background-color: rgba(144, 90, 40, 0.2); }
-    #accommodations .copy .wire-one {
-      height: 3px;
-      width: 18em;
-      left: 10%;
-      top: 7%; }
-    #accommodations .copy .wire-two {
-      height: 3px;
-      width: 18em;
-      left: 10%;
-      bottom: 7%; }
+    @media only screen and (max-width: 600px) {
+      #accommodations .back {
+        background: url(../img/accommodationsmobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  #accommodations .copy button {
+    margin-bottom: 0.5em; }
+    #accommodations .copy button a:hover {
+      color: white; }
 
 #registry {
   z-index: 2;
   /* slide under group 5 and 7 */ }
   #registry .base {
-    background: url(../img/whiteback.jpg);
+    background: url(../img/registryback.jpg);
     background-size: cover;
     background-position: center; }
-  #registry .copy {
-    width: 380px; }
-    #registry .copy .wire-one {
-      height: 3px;
-      width: 20em;
-      left: 10%;
-      top: 10%; }
-    #registry .copy .wire-two {
-      height: 3px;
-      width: 20em;
-      left: 10%;
-      bottom: 10%; }
+    @media only screen and (max-width: 600px) {
+      #registry .base {
+        background: url(../img/registrymobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  #registry .copy h2 {
+    font-size: 22px; }
 
 #rsvp {
   z-index: 3;
-  /* slide over group 7 */
-  height: 225vh; }
+  height: 210vh; }
   #rsvp .base {
     background: white; }
   #rsvp .form {
@@ -437,5 +408,9 @@ a[id="r-scroll"]:target ~ #parallax #registry {
       #rsvp .footer p i {
         color: #a30031;
         font-size: 16px; }
+    @media only screen and (max-width: 600px) {
+      #rsvp .footer {
+        height: 9em;
+        margin-top: -14em; } }
 
 /*# sourceMappingURL=styles.css.map */

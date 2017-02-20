@@ -14,4 +14,8 @@
     display: inline-block;
     padding: 1em;
   }
+
+  @media only screen and (max-width: $medium-screen) {
+    display: none;
+  }
 }
